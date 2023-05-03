@@ -1,0 +1,130 @@
+body {
+    background-color: rgb(245, 245, 245);
+}
+
+.body{
+    margin-top: 40px;
+}
+
+.container {
+    margin: auto;
+    height: 100%;
+    width: 25vw;
+    background-color: rgb(255, 255, 255);
+    border: .5px solid rgba(113, 113, 113, 0.395);
+    border-radius: 10px;
+    text-align: left;
+    padding: 0 40px 40px 40px;
+}
+
+.container h2 {
+    font-size: 35px;
+    color: rgb(50, 130, 50);
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.formfield {
+    display: flex;
+    flex-direction: column;
+    height: 85px;
+}
+
+.formfield label {
+    font-size: 17px;
+    color: rgb(95, 95, 95);
+}
+
+.formfield:nth-child(6) label {
+    font-size: 17px;
+    color: rgb(50, 130, 50);
+    margin-bottom: 4px;
+}
+
+.formfield:nth-child(6) label {
+    margin-right: 15px;
+}
+
+.input {
+    margin: 5px 0;
+    padding: 5px;
+    border: 2px rgba(126, 126, 126, 0.605) solid;
+    border-radius: 4px;
+    height: 20px;
+}
+
+.formfield input:focus,
+.uncompleted:focus {
+    border: 2px rgba(73, 132, 200, 0.838) solid;
+    outline: none;
+}
+
+.uncompleted {
+    border: 2px rgba(255, 0, 0, 0.371) solid;
+    border-radius: 4px;
+    margin: 5px 0;
+    padding: 5px;
+    height: 20px;
+}
+
+.formfield span {
+    font-size: 11px;
+    color: rgb(172, 0, 0);
+    background-color: rgba(248, 0, 0, 0.618);
+    border-radius: 4px;
+    padding: 3px;
+    width: 100%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.formfield .checkbox {
+    display: flex;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0 0 0;
+}
+
+.buttons button {
+    background-color: rgb(50, 130, 50);
+    color: #fff;
+    border-radius: 5px;
+    padding: 4px;
+    width: 90px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.buttons a {
+    color: rgb(50, 130, 50);
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 4px;
+}
+
+@media screen and (max-width:1200px) {
+
+    .container {
+        width: 40vw;
+    }
+
+}
+
+@media screen and (max-width:992px) {
+
+    .container {
+        width: 50vw;
+    }
+
+}
+
+@media screen and (max-width:767px) {
+
+    .container {
+        width: 60vw;
+    }
+
+}
